@@ -27,10 +27,10 @@ The tidy data are created using [run_analysis.R](run_analysis.R) script, see [RE
 The resulting tidy data frame contains 68 variables including:
 
 * first column "activity" in human readable form
-+ strings "walking", "walking upstairs", "walking downstairs", "sitting", "standing", "laying";
+ + strings "walking", "walking upstairs", "walking downstairs", "sitting", "standing", "laying";
 * second column "subject" with anonymous subject id number,
-+ integer index from 1 to 30;
+ + integer index from 1 to 30;
 * following 66 retained features which were averaged for each activity and each subject
-+ numeric values.
+ + numeric values.
 
 There are 180 resulting observations for each unique pair of (activity, subject).
