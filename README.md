@@ -3,6 +3,7 @@
 ## Purpose
 
 The purpose of this project is to demonstrate the ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. The data should be prepared by using an R script called [run_analysis.R](run_analysis.R) that does the following:
+
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 3. Uses descriptive activity names to name the activities in the data set.
@@ -14,6 +15,7 @@ The purpose of this project is to demonstrate the ability to collect, work with,
 It is assumed that the data (available from [UC Irvine Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)) unzipped conserving the folder structure into the directory where this script is located. Running the command ``Rscript run_analysis.R`` in the terminal produces the tidy data set with the average of each variable for each activity and each subject. The resulted file name is ``averages.txt``, which is submitted to Coursera server.
 
 The script performs the following steps:
+
 1. Merges the training and the test sets to create one data set:
 + load the train data from ``UCI HAR Dataset/train/X_train.txt`` file,
 + load the corresponding activity codes from ``UCI HAR Dataset/train/y_train.txt`` file,
@@ -41,8 +43,10 @@ The script performs the following steps:
 + write the resulting means into the text file called ``averages.txt`` as required.
 
 As a result, the file ``averages.txt`` contains a tidy data set with 68 columns:
+
 * first column "activity" in human readable form, 
 * second column "subject" with anonymous subject id number,
 * following 66 measurements which were averaged for each activity and each subject.
+
 There are 180 resulting observations for each unique pair of (activity, subject).
 
