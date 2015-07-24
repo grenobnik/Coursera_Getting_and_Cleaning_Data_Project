@@ -48,4 +48,4 @@ As a result, the file ``averages.txt`` contains a tidy data set with 68 columns:
 * second column "subject" with anonymous subject id number,
 * following 66 measurements which were averaged for each activity and each subject.
 
-There are 180 resulting observations for each unique pair of (activity, subject).
+There are 180 resulting observations for each unique pair of (activity, subject), see [code book](codebook.md) for details.

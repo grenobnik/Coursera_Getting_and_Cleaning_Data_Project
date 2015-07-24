@@ -22,15 +22,17 @@ The data represent measurements collected from the accelerometers from the Samsu
 
 ## Creating the tidy datafile
 
-The tidy data are created using [run_analysis.R](run_analysis.R) script, see [README](README.md) for details. Briefly, the provided data for training and for test are merged together. Then, only requested measurements are retained. Note, the measurements descriptions are provided in original data folder in file ``UCI HAR Dataset/features_info.txt``. We retain only the features, that are related to _mean values_ and _standard deviation_, i.e. containing the substrings _mean()_ or _std()_. 
+The tidy data set is created using [run_analysis.R](run_analysis.R) script, see [README](README.md) for details. Briefly, the provided data for training and for test are merged together. Then, only requested measurements are retained. Note, the measurements descriptions are provided in original data folder in file ``UCI HAR Dataset/features_info.txt``. We retain only the features, that are related to _mean values_ and _standard deviation_, i.e. containing the substrings _mean()_ or _std()_. 
+
+## Variables and observations
 
 The resulting tidy data frame contains 68 variables including:
 
-* first column "activity" in human readable form
+* first column "activity" in human readable form:
  + strings "walking", "walking upstairs", "walking downstairs", "sitting", "standing", "laying";
-* second column "subject" with anonymous subject id number,
+* second column "subject" with anonymous subject id number:
  + integer index from 1 to 30;
-* following 66 retained features which were averaged for each activity and each subject
+* following 66 retained features which were averaged for each activity and each subject:
  + numeric values.
 
 There are 180 resulting observations for each unique pair of (activity, subject).
